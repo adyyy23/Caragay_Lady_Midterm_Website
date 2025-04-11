@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Faux Fur Jacket - Vlarie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vlarie</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail-section">
+        <div class="product-detail-container">
+            <div class="product-gallery">
+                <div class="gallery-container">
+                    <img id="mainProductImage" src="image/fur-removebg-preview.png" alt="Short Faux Fur Jacket">
+                </div>
+                <div class="gallery-controls">
+                    <div class="gallery-control prev-image" onclick="prevImage()">❮</div>
+                    <div class="gallery-control next-image" onclick="nextImage()">❯</div>
+                </div>
+                <div class="thumbnails">
+                    <div class="thumbnail active" onclick="changeImage(0)">
+                        <img src="image/fur-removebg-preview.png" alt="Short Faux Fur Jacket Front">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(1)">
+                        <img src="image/fur2-removebg-preview.png" alt="Short Faux Fur Jacket Back">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(2)">
+                        <img src="image/fur3-removebg-preview.png" alt="Short Faux Fur Jacket Side">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-breadcrumb">
+                    <a href="index.html">Home</a> > 
+                    <a href="product.html">Products</a> > 
+                    <a href="#">Outerwear</a> > 
+                    <span>Short Faux Fur Jacket</span>
+                </div>
+                <h1 class="product-title">Short Faux Fur Jacket</h1>
+                <p class="product-price">₱2,199.00</p>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(37 reviews)</span>
+                </div>
+                <p class="product-description">
+                    This short faux fur jacket has a boxy, oversized fit with a narrow shawl collar neckline. Made from heavyweight, multi-dimensional faux fur, this jacket brings luxury and warmth to your style.
+                </p>
+                <div class="product-features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Boxy, oversized fit</li>
+                        <li>Hits the high hip</li>
+                        <li>Narrow shawl collar neckline</li>
+                        <li>Hook and eye closure at CF</li>
+                        <li>Dropped shoulder</li>
+                        <li>Seamed pockets</li>
+                        <li>Long, wide sleeves</li>
+                        <li>Body Length: 22 1/2”</li>
+                        <li>100% Acrylic</li>
+                    </ul>
+                </div>
+                <div class="product-options">
+                    <label class="option-label">Size</label>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)">XS</div>
+                        <div class="size-option active" onclick="selectSize(this)">S</div>
+                        <div class="size-option" onclick="selectSize(this)">M</div>
+                        <div class="size-option" onclick="selectSize(this)">L</div>
+                        <div class="size-option" onclick="selectSize(this)">XL</div>
+                    </div>
+                    <label class="option-label">Quantity</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" max="10" id="quantityInput">
+                        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCartFromDetail()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Vlarie</h3>
+                <p>Your one-stop destination for trendy fashion items at affordable prices. We bring you the latest styles from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

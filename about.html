@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Vlarie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vlarie</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Banner -->
+    <div class="about-banner">
+        <div class="about-banner-content">
+            <h1>About Vlarie</h1>
+            <p>Your trusted fashion destination since 2025</p>
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="about-tabs">
+            <div class="about-tab active" data-tab="story">Our Story</div>
+            <div class="about-tab" data-tab="mission">Our Mission</div>
+            <div class="about-tab" data-tab="values">Our Values</div>
+        </div>
+        
+        <div class="about-content active" id="story">
+            <h2>Our Story</h2>
+            <p>Vlarie was born in 2025 with a simple yet powerful idea: to create a fashion brand that combines quality, affordability, and style. Our founder, inspired by the lack of accessible fashion that didn't compromise on quality, decided to create a brand that would bridge this gap in the market.</p>
+            <p>Starting as a small online store with just a handful of products, Vlarie quickly gained popularity for its commitment to providing fashionable clothing that doesn't break the bank. Over the years, we've expanded our collection to include a wide range of clothing items, from casual everyday wear to elegant pieces for special occasions.</p>
+            <p>Today, Vlarie is a trusted name in the fashion industry, serving customers all over the world. Our journey has been one of growth, learning, and constant evolution, but our core values remain the same: to provide high-quality, stylish clothing at affordable prices.</p>
+        </div>
+        
+        <div class="about-content" id="mission">
+            <h2>Our Mission</h2>
+            <p>At Vlarie, our mission is to empower individuals to express themselves through fashion without financial constraints. We believe that everyone deserves to look and feel their best, regardless of their budget.</p>
+            <p>We are committed to creating clothing that not only follows the latest trends but also stands the test of time in terms of quality and design. Our goal is to be a one-stop destination for all your fashion needs, offering a diverse range of products that cater to different styles, occasions, and preferences.</p>
+            <p>We aim to provide an exceptional shopping experience by ensuring easy navigation, secure payment options, and reliable delivery services. Customer satisfaction is at the heart of everything we do, and we continuously strive to improve and enhance our services based on customer feedback.</p>
+        </div>
+        
+        <div class="about-content" id="values">
+            <h2>Our Values</h2>
+            <p><strong>Quality:</strong> We never compromise on the quality of our products. Each item in our collection undergoes rigorous quality checks to ensure it meets our high standards.</p>
+            <p><strong>Affordability:</strong> We believe that fashion should be accessible to everyone. Our pricing strategy is designed to offer the best value for money without compromising on quality.</p>
+            <p><strong>Customer-Centric:</strong> Our customers are at the heart of everything we do. We value their feedback and continuously strive to improve our products and services to meet their needs and expectations.</p>
+            <p><strong>Innovation:</strong> We embrace change and constantly seek new ways to improve our products, services, and processes. Innovation is key to our growth and success.</p>
+            <p><strong>Integrity:</strong> We conduct our business with honesty, transparency, and ethical practices. We believe in building trust with our customers, suppliers, and partners.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-container">
+            <!-- Delivery Service -->
+            <div class="service-card">
+                <h3>Fast Delivery</h3>
+                <p>We offer express shipping options that deliver your order within 1-3 business days. Standard shipping takes 3-5 business days. International shipping available to over 50 countries.</p>
+                <p>Free shipping on all orders over!</p>
+            </div>
+
+            <!-- Return Policy -->
+            <div class="service-card">
+                <h3>Easy Returns</h3>
+                <p>Not satisfied with your purchase? No problem! You can return any item within 30 days of delivery for a full refund or exchange. Items must be in original condition with tags attached.</p>
+                <p>Returns are processed within 5-7 business days of receiving your item.</p>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="service-card">
+                <h3>24/7 Support</h3>
+                <p>Our friendly customer service team is available 24/7 to answer any questions you may have about your order, our products, or our services.</p>
+                <p>Contact us via email, phone, or live chat and we'll get back to you as soon as possible.</p>
+            </div>
+
+            <!-- Secure Payment -->
+            <div class="service-card">
+                <h3>Secure Payment</h3>
+                <p>Shop with confidence! We use industry-leading encryption to ensure that your payment information is always safe and secure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Vlarie</h3>
+                <p>Your one-stop destination for trendy fashion items at affordable prices. We bring you the latest styles from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // JavaScript for tab switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.about-tab');
+            const contents = document.querySelectorAll('.about-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

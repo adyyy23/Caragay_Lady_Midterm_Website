@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlarie- Your Basic Fashion Destination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vlarie</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Style</h1>
+            <p>Explore our latest collection of trendy fashion items designed to match your unique personality and style. Get up to 30% off on selected items!</p>
+            <a href="product.html" class="hero-btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="image/maroon-removebg-preview.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="categories-container">
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/black-removebg-preview.png" alt="T-Shirts">
+                </div>
+                <p class="category-name">Tops</p>
+            </div>
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/low-removebg-preview.png" alt="Dresses">
+                </div>
+                <p class="category-name">Bottoms</p>
+            </div>
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/fur-removebg-preview.png" alt="Jackets">
+                </div>
+                <p class="category-name">Outerwear</p>
+            </div>
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/pants-removebg-preview.png" alt="Jeans">
+                </div>
+                <p class="category-name">Jeans</p>
+            </div>
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/skirt-removebg-preview (1).png" alt="Shoes">
+                </div>
+                <p class="category-name">Skirts</p>
+            </div>
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/pink-removebg-preview.png" alt="Accessories">
+                </div>
+                <p class="category-name">Sweatpants</p>
+            </div>
+            <div class="category">
+                <div class="category-circle">
+                    <img src="image/long-removebg-preview.png" alt="Bags">
+                </div>
+                <p class="category-name">Long Sleeve</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Sale Products</h2>
+        <div class="products-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/black-removebg-preview.png" alt="Classic  T-Shirt">
+                </div>
+                <div class="product-details">
+                    <h5 class="product-title">Short Sleeve Fitted Cotton Tee</h5>
+                    <p class="product-category">Tops</p>
+                    <p class="product-price">₱899.00</p>
+                    <div class="product-actions">
+                        <a href="product1.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(1, 'Classic White T-Shirt', 24.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/white-removebg-preview.png" alt="Black Denim Jacket">
+                </div>
+                <div class="product-details">
+                    <h5 class="product-title">Long Sleeve Fitted Cotton Tee</h5>
+                    <p class="product-category">Long Sleeve</p>
+                    <p class="product-price">₱999.00</p>
+                    <div class="product-actions">
+                        <a href="product2.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(2, 'Black Denim Jacket', 79.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/green-removebg-preview.png" alt="Floral Summer Dress">
+                </div>
+                <div class="product-details">
+                    <h5 class="product-title">Straight Leg Supersoft Sweatpant</h5>
+                    <p class="product-category">Sweatpants</p>
+                    <p class="product-price">₱1,299.00</p>
+                    <div class="product-actions">
+                        <a href="product12.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(3, 'Floral Summer Dress', 49.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/pants-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h5 class="product-title">Low Rise Relaxed Denim</h5>
+                    <p class="product-category">Jeans</p>
+                    <p class="product-price">₱1,799.00</p>
+                    <div class="product-actions">
+                        <a href="product4.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Vlarie</h3>
+                <p>Your one-stop destination for trendy fashion items at affordable prices.</p>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-title">Contact Us</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Vlarie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vlarie</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Banner -->
+    <div class="products-banner">
+        <div class="banner-content">
+            <h1>Our Products</h1>
+            <p>Discover our collection of high-quality fashion items</p>
+        </div>
+    </div>
+
+    <!-- All Products Section -->
+    <section class="products-section">
+        <div class="products-container" id="productsContainer">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="tshirts" data-price="24.99" data-name="Classic White T-Shirt">
+                <div class="product-image">
+                    <img src="image/black-removebg-preview.png" alt="Classic White T-Shirt">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Short Sleeve Fitted Cotton Tee</h3>
+                    <p class="product-category">Tops</p>
+                    <p class="product-price">₱899.00</p>
+                    <div class="product-actions">
+                        <a href="product1.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(1, 'Classic White T-Shirt', 24.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More products with same structure... -->
+            <!-- Product 2 -->
+            <div class="product-card" data-category="jackets" data-price="79.99" data-name="Black Denim Jacket">
+                <div class="product-image">
+                    <img src="image/white-removebg-preview.png" alt="Black Denim Jacket">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Long Sleeve Fitted Cotton Tee</h3>
+                    <p class="product-category">Tops</p>
+                    <p class="product-price">₱999.00</p>
+                    <div class="product-actions">
+                        <a href="product2.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(2, 'Black Denim Jacket', 79.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="dresses" data-price="49.99" data-name="Floral Summer Dress">
+                <div class="product-image">
+                    <img src="image/long-removebg-preview.png" alt="Floral Summer Dress">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Fitted Collared Shirt with Zipper</h3>
+                    <p class="product-category">Long Sleeve</p>
+                    <p class="product-price">₱1,499.00</p>
+                    <div class="product-actions">
+                        <a href="product3.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(3, 'Floral Summer Dress', 49.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/pants-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Low Rise Relaxed Denim</h3>
+                    <p class="product-category">Bottoms</p>
+                    <p class="product-price">₱1,799.00</p>
+                    <div class="product-actions">
+                        <a href="product4.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/pink-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Straight Leg Supersoft Sweatpant</h3>
+                    <p class="product-category">Sweatpants</p>
+                    <p class="product-price">₱1,299.00</p>
+                    <div class="product-actions">
+                        <a href="product5.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/fur-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Short Faux Fur Jacket</h3>
+                    <p class="product-category">Outerwear</p>
+                    <p class="product-price">₱2,199.00</p>
+                    <div class="product-actions">
+                        <a href="product7.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/sleeve-removebg-preview-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Oversized Button Down Top</h3>
+                    <p class="product-category">Sweatpants</p>
+                    <p class="product-price">₱1,499.00</p>
+                    <div class="product-actions">
+                        <a href="product8.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/skirt-removebg-preview (1).png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Low Rise Faux Leather Skirt</h3>
+                    <p class="product-category">Skirts</p>
+                    <p class="product-price">₱1,499.00</p>
+                    <div class="product-actions">
+                        <a href="product9.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/slit-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Maxi Slit Skirt</h3>
+                    <p class="product-category">Skirts</p>
+                    <p class="product-price">₱1,699.00</p>
+                    <div class="product-actions">
+                        <a href="product10.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/low-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Low Rise Faux Leather Pants</h3>
+                    <p class="product-category">Skirts</p>
+                    <p class="product-price">₱1,699.00</p>
+                    <div class="product-actions">
+                        <a href="product6.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/big-removebg-preview (1).png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Cropped Puffer Jacket</h3>
+                    <p class="product-category">Outerwear</p>
+                    <p class="product-price">₱2,499.00</p>
+                    <div class="product-actions">
+                        <a href="product11.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jeans" data-price="59.99" data-name="Slim Fit Jeans">
+                <div class="product-image">
+                    <img src="image/green-removebg-preview.png" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Straight Leg Supersoft Sweatpant</h3>
+                    <p class="product-category">Sweatpants</p>
+                    <p class="product-price">₱1,299.00</p>
+                    <div class="product-actions">
+                        <a href="product12.html" class="view-details">Details</a>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Slim Fit Jeans', 59.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Vlarie</h3>
+                <p>Your one-stop destination for trendy fashion items at affordable prices. We bring you the latest styles from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

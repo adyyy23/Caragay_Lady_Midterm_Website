@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Leg Supersoft Sweatpant - Vlarie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vlarie</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail-section">
+        <div class="product-detail-container">
+            <div class="product-gallery">
+                <div class="gallery-container">
+                    <img id="mainProductImage" src="image/pink-removebg-preview.png" alt="Straight Leg Supersoft Sweatpant">
+                </div>
+                <div class="gallery-controls">
+                    <div class="gallery-control prev-image" onclick="prevImage()">❮</div>
+                    <div class="gallery-control next-image" onclick="nextImage()">❯</div>
+                </div>
+                <div class="thumbnails">
+                    <div class="thumbnail active" onclick="changeImage(0)">
+                        <img src="image/pink-removebg-preview.png" alt="Straight Leg Supersoft Sweatpant Front">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(1)">
+                        <img src="image/pink2-removebg-preview.png" alt="Straight Leg Supersoft Sweatpant Back">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(2)">
+                        <img src="image/pink3-removebg-preview.png" alt="Straight Leg Supersoft Sweatpant Side">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-breadcrumb">
+                    <a href="index.html">Home</a> > 
+                    <a href="product.html">Products</a> > 
+                    <a href="#">Sweatpants</a> > 
+                    <span>Straight Leg Supersoft Sweatpant</span>
+                </div>
+                <h1 class="product-title">Straight Leg Supersoft Sweatpant</h1>
+                <p class="product-price">₱1,299.00</p>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(27 reviews)</span>
+                </div>
+                <p class="product-description">
+                    Straight leg supersoft sweatpants with wide leg and low rise fit. Made from brush back French terry for a relaxed, slouchy feel.
+                </p>
+                <div class="product-features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Brush back French terry</li>
+                        <li>Relaxed slouchy fit</li>
+                        <li>Wide leg</li>
+                        <li>Pull-on waist with interior drawcord</li>
+                        <li>Zip pockets</li>
+                        <li>Drop crotch</li>
+                        <li>33" inseam</li>
+                        <li>100% Cotton</li>
+                    </ul>
+                </div>
+                <div class="product-options">
+                    <label class="option-label">Size</label>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)">XS</div>
+                        <div class="size-option active" onclick="selectSize(this)">S</div>
+                        <div class="size-option" onclick="selectSize(this)">M</div>
+                        <div class="size-option" onclick="selectSize(this)">L</div>
+                        <div class="size-option" onclick="selectSize(this)">XL</div>
+                    </div>
+                    <label class="option-label">Quantity</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" max="10" id="quantityInput">
+                        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCartFromDetail()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Vlarie</h3>
+                <p>Your one-stop destination for trendy fashion items at affordable prices. We bring you the latest styles from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
